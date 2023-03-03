@@ -16,6 +16,5 @@ def getDigitsReverse(n: int) -> str:
     return ""
 
 
-
 number = int(input("Введите число\n"))
 print(getDigitsReverse(number))

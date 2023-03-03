@@ -3,14 +3,14 @@
 # всех арифметических операций допускаются только +1 и -1.
 # Также нельзя использовать циклы.
 
-def sum(a:int, b:int) -> int:
+def sum(a: int, b: int) -> int:
     if a == 0 and b == 0:
         return 0
     if b == 0:
         return sum(a - 1, 0) + 1
     if a == 0:
         return sum(0, b - 1) + 1
-    return sum(a - 1, b-1) + 1 + 1
+    return sum(a - 1, b - 1) + 1 + 1
 
 
 a = int(input("Введите а\n"))

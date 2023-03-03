@@ -16,11 +16,13 @@
 
 def memoize(func):
     d = {}
+
     def inner(num):
         if num not in d:
             d[num] = func(num)
         return d[num]
     return inner
+
 
 @memoize
 def fibonacci(n):
@@ -31,10 +33,10 @@ def fibonacci(n):
         return n
     return fibonacci(n - 1) + fibonacci(n - 2)
 
-#fib(5) -> fib(4) + fib(3)
-#fib(4) -> fib(3) + fib(2)
-#fib(3) -> fib(2) + fib(1)
-#fib(2) -> fib(1) + fib(0)
+# fib(5) -> fib(4) + fib(3)
+# fib(4) -> fib(3) + fib(2)
+# fib(3) -> fib(2) + fib(1)
+# fib(2) -> fib(1) + fib(0)
 # print(fibonacci(10))
 # print(fibonacci(50))
 # assert fibonacci(60) == 1548008755920
@@ -43,5 +45,6 @@ def fibonacci(n):
 # assert fibonacci(90) == 2880067194370816120
 # assert fibonacci(100) == 354224848179261915075
 
+
 for i in range(1, 101):
-    print(i,fibonacci(i))
+    print(i, fibonacci(i))

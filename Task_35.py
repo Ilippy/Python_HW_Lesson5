@@ -4,7 +4,7 @@
 # Напоминание: Простое число - это число, которое
 # имеет 2 делителя: 1 и n(само число)
 # Input: 5
-# Output: yes 
+# Output: yes
 
 def isPrime(a):
     k = 0
@@ -16,6 +16,6 @@ def isPrime(a):
 # numb = int(input("Введите число\n"))
 # print("yes" if isPrime(numb) else "no")
 
-for i in range(2,101):
-    print(f"yes {i}" if isPrime(i) else f"no {i}")
 
+for i in range(2, 101):
+    print(f"yes {i}" if isPrime(i) else f"no {i}")
