@@ -16,7 +16,6 @@
 
 def memoize(func):
     d = {}
-
     def inner(num):
         if num not in d:
             d[num] = func(num)
